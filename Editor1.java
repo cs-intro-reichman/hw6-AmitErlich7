@@ -16,6 +16,7 @@ public class Editor1 {
 		String action = args[1];
 		// Reads the input image and creates an empty output image
 		Color[][] imageIn = Runigram.read(fileName);	
+
 		Color[][] imageOut = null;	
 		// Applies the specified image processing function										
 		if (action.equals("fh")) {
@@ -31,7 +32,7 @@ public class Editor1 {
 		// (Notice that both images have the same dimensions).
 		Runigram.setCanvas(imageIn);
 		Runigram.display(imageIn);
-		StdDraw.pause(3000); 
+		StdDraw.pause(3000);
 		Runigram.display(imageOut);							
 	}
 }
